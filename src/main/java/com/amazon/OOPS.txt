@@ -1,0 +1,46 @@
+Amazon Classified Application Specially For Amazon Employees.
+Developer Name : Varsha Singh
+
+In Amazon We have Buddy Culture!(Supportive & Understanding), so I Tried to Implement this App for User's and Admin which makes it more Friendly :)
+
+Project has 2 Roles
+1) Admin
+Admin Login Credential:-
+Email ID : varsha@abc.com
+Password : 123
+
+2) User
+User Login Credential:-
+Email ID : sam@abc.com
+Password : 123
+
+Class User has Attributes -> id, name, phone, email, password, address, department, status,type, lastUpdateOn
+                          Type 1 - Admin
+                          type 2 - User ( i.e. Employee who should be using classified)
+
+                          status 0 - deactivated
+                          status 1 - active
+
+Class Category has Attributes -> id, title, lastUpdateOn
+
+Class Classified has Attributes -> id, categoryId, status, headline, productName, brand, condition,
+                           description, price, pictures, lastUpdateOn.
+                 status -> 0 Pending
+                 status -> 1 approved
+                 status -> 2 rejected
+                 status -> 3 sold
+
+                 condition - > Brand new(sealed pack), Lightly used, Moderately Used, Heavily Used
+                 Damaged/Dented, Not Working.
+
+Class Message has Attributes  -> id, classifiedId, fromUserId, toUserId, proposedPrice, status, lastUpdatedOn.
+                  status -> 0 requested for purchase
+                  status -> 1 accepted i.e. agreed to sell
+                  status -> 2 rejected i.e. not interested to sell
+                  status -> 3 payment processed ( Product sold)
+
+Relationships -
+         1 User can post many classified
+         1 User can buy many products as listed in classified
+         1 User can have many Messages
+

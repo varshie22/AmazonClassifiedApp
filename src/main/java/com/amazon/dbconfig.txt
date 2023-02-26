@@ -1,0 +1,3 @@
+jdbc:mysql://localhost/amazonclassified
+root
+123qwe

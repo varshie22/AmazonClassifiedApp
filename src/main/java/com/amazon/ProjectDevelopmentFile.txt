@@ -1,0 +1,55 @@
+Project Development Steps
+1. Flow Mapping
+2. OOPS - > Identification of Objects and Attributes
+            User - id, name, phone, email, password, address, createOn, type, status.
+            1 - admin
+            2 - user
+
+            Classified - id, headline, productName, productBrand, condition, description,category,price, Images, userID, adminID, status,
+            	Status
+            	1 - available
+            	2 - sold
+            	3 - pending (pending for approval) - this would be used to see all the classified request made by the user using status as pending it means it needs the approval
+
+            Transaction - id,type, classifiedID, UserID, amount, createdOn
+            	Type
+            	1 - UPI
+            	2 - banking
+                3 - Cash on Delivery
+            Message - id, type, description, offerStatus, classifiedID, userID
+            	Type
+            	1 - request
+            	2 - respond
+
+            	OfferStatus
+            	Made
+            	Accepted
+            	Rejected
+            	Pending (in case the offer made by the buyer is not of the interest of the seller)
+
+3. ORM -> Entity Relationship |DBMS
+
+            Mapping
+            User to message   – 1 to many
+            User to classified   – 1 to many
+            User to transaction – 1 to many
+            Classified to transaction – 1 to 1
+
+4. Code of the Project
+             4.1 Modules
+             eg : Admin
+                  User
+                  etc...
+             4.2 Well Packaging
+             4.3 Design Pattern
+             Singleton to Design DataBase Structure
+             Factory for RTP Behaviour
+5. Test Cases
+              Microsoft Excel and Junit
+6. Build the Project
+              Packaging of Jar File
+7. IntelliJ IDE
+              Build Tool Maven
+8. MYSQL Database
+
+
